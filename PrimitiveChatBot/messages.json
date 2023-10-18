@@ -1,0 +1,569 @@
+[
+  {
+    "Keyword": "Wie geht's?",
+    "Answer": "Mir geht es gut, danke! Und Ihnen?",
+    "Type": "MatchFull",
+    "Children": [
+      {
+        "Keyword": "Mir auch gut",
+        "Answer": "Das ist schön zu hören! Was bringt Sie heute zu mir?",
+        "Type": "MatchPartial",
+        "Children": [
+          {
+            "Keyword": "Einfach plaudern",
+            "Answer": "Klar, ich bin hier zum Plaudern! Gibt es ein spezielles Thema, über das Sie sprechen möchten?",
+            "Type": "MatchPartial",
+            "Children": [
+              {
+                "Keyword": "Urlaub",
+                "Answer": "Urlaub klingt toll! Haben Sie schon Pläne oder suchen Sie nach Vorschlägen?",
+                "Type": "MatchPartial",
+                "Children": [
+                  {
+                    "Keyword": "Pläne",
+                    "Answer": "Wohin geht Ihre Reise? Es ist immer aufregend, neue Orte zu besuchen!",
+                    "Type": "MatchPartial",
+                    "Children": [
+                      {
+                        "Keyword": "Berge",
+                        "Answer": "Die Berge sind so friedlich und schön. Vergessen Sie nicht, warme Kleidung mitzunehmen!",
+                        "Type": "MatchPartial"
+                      },
+                      {
+                        "Keyword": "Strand",
+                        "Answer": "Ein Strandurlaub klingt entspannend. Denken Sie daran, Sonnencreme mitzunehmen und sich zu entspannen!",
+                        "Type": "MatchPartial"
+                      }
+                    ]
+                  },
+                  {
+                    "Keyword": "Vorschläge",
+                    "Answer": "Deutschland bietet viele schöne Orte. Haben Sie an die Alpen oder die Nordsee gedacht?",
+                    "Type": "MatchPartial",
+                    "Children": [
+                      {
+                        "Keyword": "Alpen",
+                        "Answer": "Die Alpen sind atemberaubend! Wandern oder Skifahren könnten tolle Aktivitäten sein. Viel Spaß!",
+                        "Type": "MatchPartial"
+                      },
+                      {
+                        "Keyword": "Nordsee",
+                        "Answer": "Die Nordsee ist wunderbar. Das Wattenmeer und die frische Brise sind einzigartig. Genießen Sie Ihre Zeit dort!",
+                        "Type": "MatchPartial"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "Keyword": "Bücher",
+                "Answer": "Ich liebe Bücher! Welches Genre bevorzugen Sie?",
+                "Type": "MatchPartial",
+                "Children": [
+                  {
+                    "Keyword": "Roman",
+                    "Answer": "Romane sind wunderbar. Haben Sie einen Lieblingsautor?",
+                    "Type": "MatchPartial",
+                    "Children": [
+                      {
+                        "Keyword": "Goethe",
+                        "Answer": "Goethe ist ein Klassiker der deutschen Literatur. 'Faust' und 'Die Leiden des jungen Werther' sind beeindruckende Werke.",
+                        "Type": "MatchPartial"
+                      },
+                      {
+                        "Keyword": "Kafka",
+                        "Answer": "Kafka hat viele faszinierende Werke geschrieben. 'Die Verwandlung' ist besonders herausragend.",
+                        "Type": "MatchPartial"
+                      }
+                    ]
+                  },
+                  {
+                    "Keyword": "Wissenschaft",
+                    "Answer": "Wissenschaftliche Bücher können sehr aufschlussreich sein. Suchen Sie nach Empfehlungen oder möchten Sie über ein bestimmtes Buch sprechen?",
+                    "Type": "MatchPartial",
+                    "Children": [
+                      {
+                        "Keyword": "Empfehlungen",
+                        "Answer": "Für Physik könnten Sie 'Eine kurze Geschichte der Zeit' von Stephen Hawking lesen. Für Biologie könnte 'Das egoistische Gen' von Richard Dawkins interessant sein.",
+                        "Type": "MatchPartial"
+                      },
+                      {
+                        "Keyword": "Spezifisches Buch",
+                        "Answer": "Bitte nennen Sie den Titel oder den Autor des Buches, und ich werde mein Bestes tun, um Ihnen dazu Informationen oder Meinungen zu geben.",
+                        "Type": "MatchPartial"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "Keyword": "Brauche Hilfe",
+            "Answer": "Natürlich! Wobei benötigen Sie Hilfe?",
+            "Type": "MatchPartial"
+          }
+        ]
+      },
+      {
+        "Keyword": "Nicht so gut",
+        "Answer": "Das tut mir leid zu hören. Möchten Sie darüber sprechen?",
+        "Type": "MatchPartial",
+        "Children": [
+          {
+            "Keyword": "Ja, es ist wegen der Arbeit",
+            "Answer": "Es tut mir leid, dass Sie Schwierigkeiten bei der Arbeit haben. Gibt es eine bestimmte Situation oder ein Problem, das Sie belastet?",
+            "Type": "MatchPartial",
+            "Children": [
+              {
+                "Keyword": "Stress",
+                "Answer": "Stress bei der Arbeit kann herausfordernd sein. Haben Sie darüber nachgedacht, eine Pause einzulegen oder mit jemandem darüber zu sprechen?",
+                "Type": "MatchPartial"
+              },
+              {
+                "Keyword": "Kollegen",
+                "Answer": "Zwischenmenschliche Beziehungen können kompliziert sein. Was genau ist passiert?",
+                "Type": "MatchPartial"
+              }
+            ]
+          },
+          {
+            "Keyword": "Nein, es ist privat",
+            "Answer": "Ich verstehe. Ich bin hier, um zuzuhören. Wenn Sie darüber sprechen möchten, bin ich da.",
+            "Type": "MatchPartial",
+            "Children": [
+              {
+                "Keyword": "Beziehung",
+                "Answer": "Beziehungen können sowohl erfüllend als auch herausfordernd sein. Was ist los?",
+                "Type": "MatchPartial"
+              },
+              {
+                "Keyword": "Gesundheit",
+                "Answer": "Es tut mir leid, das zu hören. Es ist wichtig, sich um seine Gesundheit zu kümmern. Haben Sie darüber nachgedacht, einen Arzt aufzusuchen?",
+                "Type": "MatchPartial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Keyword": "Es ist okay",
+        "Answer": "Okay, bitte lassen Sie mich wissen, wenn Sie sprechen möchten oder wenn es etwas gibt, bei dem ich helfen kann.",
+        "Type": "MatchPartial"
+      }
+    ]
+  },
+  {
+    "Keyword": "Sport",
+    "Answer": "Sport ist eine großartige Möglichkeit, fit zu bleiben und Spaß zu haben! Welchen Sport mögen Sie am meisten?",
+    "Type": "MatchPartial",
+    "Children": [
+      {
+        "Keyword": "Fußball",
+        "Answer": "Fußball ist weltweit sehr beliebt. Hoffentlich können Sie bald wieder ein Spiel live im Stadion sehen.",
+        "Type": "MatchPartial"
+      },
+      {
+        "Keyword": "Tennis",
+        "Answer": "Tennis ist ein eleganter Sport. Hoffentlich können Sie bald wieder ein Match spielen oder zuschauen.",
+        "Type": "MatchPartial"
+      },
+      {
+        "Keyword": "Basketball",
+        "Answer": "Basketball ist dynamisch und aufregend. Vielleicht gibt es bald ein spannendes Spiel in Ihrer Nähe.",
+        "Type": "MatchPartial"
+      },
+      {
+        "Keyword": "Schwimmen",
+        "Answer": "Schwimmen ist erfrischend. Ein Sprung ins kühle Wasser ist gerade im Sommer wunderbar.",
+        "Type": "MatchPartial"
+      },
+      {
+        "Keyword": "Laufen",
+        "Answer": "Laufen ist befreiend. Ein Morgenlauf kann den Tag perfekt starten lassen.",
+        "Type": "MatchPartial"
+      },
+      {
+        "Keyword": "Radsport",
+        "Answer": "Radtouren in der Natur sind entspannend. Die frische Luft und die Bewegung tun gut.",
+        "Type": "MatchPartial"
+      },
+      {
+        "Keyword": "Yoga",
+        "Answer": "Yoga bringt Körper und Geist in Einklang. Eine Yoga-Session kann sehr entspannend sein.",
+        "Type": "MatchPartial"
+      },
+      {
+        "Keyword": "Klettern",
+        "Answer": "Klettern ist eine Herausforderung, aber die Aussicht von oben ist es wert.",
+        "Type": "MatchPartial"
+      },
+      {
+        "Keyword": "Boxen",
+        "Answer": "Boxen ist intensiv. Es ist eine gute Möglichkeit, Stress abzubauen.",
+        "Type": "MatchPartial"
+      },
+      {
+        "Keyword": "Tischtennis",
+        "Answer": "Tischtennis ist ein schneller Sport. Ein paar Spiele können viel Spaß machen.",
+        "Type": "MatchPartial"
+      }
+    ]
+  },
+  {
+    "Keyword": "Essen",
+    "Answer": "Wer liebt nicht gutes Essen? Haben Sie ein Lieblingsgericht oder eine Küche, die Sie bevorzugen?",
+    "Type": "MatchPartial",
+    "Children": [
+      {
+        "Keyword": "Italienisch",
+        "Answer": "Italienische Küche ist unwiderstehlich. Ein gutes Pasta-Gericht kann Wunder wirken.",
+        "Type": "MatchPartial"
+      },
+      {
+        "Keyword": "Deutsch",
+        "Answer": "Ein deftiges deutsches Essen wärmt die Seele. Ideal für kühle Tage.",
+        "Type": "MatchPartial"
+      },
+      {
+        "Keyword": "Französisch",
+        "Answer": "Französische Delikatessen sind ein Genuss. Ein frisches Croissant am Morgen ist ein Traum.",
+        "Type": "MatchPartial"
+      },
+      {
+        "Keyword": "Chinesisch",
+        "Answer": "Die Vielfalt der chinesischen Küche ist beeindruckend. Dim Sum zum Frühstück ist eine Delikatesse.",
+        "Type": "MatchPartial"
+      },
+      {
+        "Keyword": "Indisch",
+        "Answer": "Indische Gewürze erwecken die Sinne. Ein würziges Curry ist immer eine gute Wahl.",
+        "Type": "MatchPartial"
+      },
+      {
+        "Keyword": "Mexikanisch",
+        "Answer": "Mexikanisches Essen ist reich an Aromen. Tacos mit frischer Guacamole sind unwiderstehlich.",
+        "Type": "MatchPartial"
+      },
+      {
+        "Keyword": "Griechisch",
+        "Answer": "Ein griechischer Salat mit frischem Feta ist im Sommer erfrischend.",
+        "Type": "MatchPartial"
+      },
+      {
+        "Keyword": "Japanisch",
+        "Answer": "Japanische Sushi-Rollen sind eine Kunst für sich. Frischer Fisch und Reis, einfach lecker.",
+        "Type": "MatchPartial"
+      },
+      {
+        "Keyword": "Vegan",
+        "Answer": "Vegane Gerichte sind gesund und nachhaltig. Es gibt so viele kreative vegane Rezepte zu entdecken.",
+        "Type": "MatchPartial"
+      },
+      {
+        "Keyword": "Grillen",
+        "Answer": "Ein Grillabend mit Freunden ist immer eine gute Idee. Gutes Essen und gute Gesellschaft.",
+        "Type": "MatchPartial"
+      }
+    ]
+  },
+  {
+    "Keyword": "Reisen",
+    "Answer": "Reisen erweitert den Horizont. Welches ist Ihr Lieblingsreiseziel oder wohin möchten Sie unbedingt einmal reisen?",
+    "Type": "MatchPartial",
+    "Children": [
+      {
+        "Keyword": "Asien",
+        "Answer": "Asien bietet eine Mischung aus Tradition und Moderne. Die Kulturen und Landschaften sind beeindruckend.",
+        "Type": "MatchPartial"
+      },
+      {
+        "Keyword": "Europa",
+        "Answer": "Europa hat eine reiche Geschichte. Jede Stadt erzählt ihre eigene Geschichte.",
+        "Type": "MatchPartial"
+      },
+      {
+        "Keyword": "Nordamerika",
+        "Answer": "Von pulsierenden Städten bis zu Nationalparks, Nordamerika bietet alles.",
+        "Type": "MatchPartial"
+      },
+      {
+        "Keyword": "Südamerika",
+        "Answer": "Die lebendigen Farben und Rhythmen Südamerikas sind ansteckend. Ein Kontinent voller Abenteuer.",
+        "Type": "MatchPartial"
+      },
+      {
+        "Keyword": "Afrika",
+        "Answer": "Von Safaris bis zu den Pyramiden, Afrika ist voller Wunder.",
+        "Type": "MatchPartial"
+      },
+      {
+        "Keyword": "Australien",
+        "Answer": "Australiens einzigartige Tierwelt und Landschaften sind faszinierend. Es gibt so viel zu entdecken.",
+        "Type": "MatchPartial"
+      },
+      {
+        "Keyword": "Antarktis",
+        "Answer": "Die unberührte Schönheit der Antarktis ist atemberaubend. Ein Kontinent der Extreme.",
+        "Type": "MatchPartial"
+      },
+      {
+        "Keyword": "Arktis",
+        "Answer": "Das magische Schauspiel des Nordlichts ist ein einmaliges Erlebnis.",
+        "Type": "MatchPartial"
+      },
+      {
+        "Keyword": "Inseln",
+        "Answer": "Inseln bieten paradiesische Fluchten. Türkisfarbenes Wasser und weiße Sandstrände.",
+        "Type": "MatchPartial"
+      },
+      {
+        "Keyword": "Städtereise",
+        "Answer": "Das Erkunden einer neuen Stadt ist aufregend. Jede Straßenecke bietet neue Entdeckungen.",
+        "Type": "MatchPartial"
+      }
+    ]
+  },
+  {
+    "Keyword": "Softwareentwicklung",
+    "Answer": "Softwareentwicklung ist ein faszinierendes Feld. Welche Programmiersprache oder Technologie interessiert Sie besonders?",
+    "Type": "MatchPartial",
+    "Children": [
+      {
+        "Keyword": "Python",
+        "Answer": "Python ist eine vielseitige Sprache, besonders beliebt für Webentwicklung und Datenanalyse.",
+        "Type": "MatchPartial",
+        "Children": [
+          {
+            "Keyword": "Django",
+            "Answer": "Django ist ein mächtiges Web-Framework für Python. Es beschleunigt die Entwicklung durch seine 'Batteries-included'-Philosophie. Viel Erfolg bei Ihrem Projekt!",
+            "Type": "MatchPartial"
+          },
+          {
+            "Keyword": "Pandas",
+            "Answer": "Pandas ist eine großartige Bibliothek für Datenmanipulation und Analyse in Python. Ich hoffe, Sie finden es nützlich für Ihre Datenprojekte!",
+            "Type": "MatchPartial"
+          }
+        ]
+      },
+      {
+        "Keyword": "Java",
+        "Answer": "Java ist weit verbreitet in Unternehmensanwendungen. Das Spring Framework ist ein beliebtes Tool für Java-Entwickler.",
+        "Type": "MatchPartial",
+        "Children": [
+          {
+            "Keyword": "Spring Boot",
+            "Answer": "Spring Boot macht es einfach, stand-alone, produktionsreife Spring-basierte Anwendungen zu erstellen. Es sollte Ihre Entwicklung erheblich beschleunigen!",
+            "Type": "MatchPartial"
+          },
+          {
+            "Keyword": "JavaFX",
+            "Answer": "JavaFX ermöglicht die Erstellung moderner Java-UI-Anwendungen. Ich hoffe, Sie erstellen damit beeindruckende Benutzeroberflächen!",
+            "Type": "MatchPartial"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Keyword": "Programmiersprachen",
+    "Answer": "Es gibt viele Programmiersprachen, jede mit ihren eigenen Stärken und Anwendungsbereichen. Welche Sprache möchten Sie besprechen?",
+    "Type": "MatchPartial",
+    "Children": [
+      {
+        "Keyword": "JavaScript",
+        "Answer": "JavaScript ist die Sprache des Webs und sehr vielseitig.",
+        "Type": "MatchPartial",
+        "Children": [
+          {
+            "Keyword": "React",
+            "Answer": "React ist eine beliebte Bibliothek für den Bau von Benutzeroberflächen. Es ermöglicht die Erstellung von Single-Page-Apps mit einem modularen Ansatz. Viel Erfolg bei Ihrem Projekt!",
+            "Type": "MatchPartial"
+          },
+          {
+            "Keyword": "Vue.js",
+            "Answer": "Vue.js ist ein progressives Framework für den Bau von Benutzeroberflächen. Seine einfache Integration und sein reaktives Datenmodell machen es zu einer beliebten Wahl.",
+            "Type": "MatchPartial"
+          }
+        ]
+      },
+      {
+        "Keyword": "C++",
+        "Answer": "C++ ist eine erweiterte Version von C mit vielen zusätzlichen Features, insbesondere für die objektorientierte Programmierung.",
+        "Type": "MatchPartial",
+        "Children": [
+          {
+            "Keyword": "Qt",
+            "Answer": "Qt ist ein freies Toolkit zur plattformübergreifenden Entwicklung von GUI-Programmen in C++. Es ermöglicht Entwicklern, Anwendungen für verschiedene Plattformen mit einem einzigen Codebase zu erstellen.",
+            "Type": "MatchPartial"
+          },
+          {
+            "Keyword": "Boost",
+            "Answer": "Boost bietet freie Peer-reviewed portable C++-Quellbibliotheken. Es erweitert die Funktionalität von C++ in vielen Bereichen.",
+            "Type": "MatchPartial"
+          }
+        ]
+      },
+      {
+        "Keyword": "Go",
+        "Answer": "Go, oft als Golang bezeichnet, ist eine statisch typisierte, kompilierte Sprache, die für ihre Einfachheit und Effizienz bekannt ist.",
+        "Type": "MatchPartial",
+        "Children": [
+          {
+            "Keyword": "Webanwendung",
+            "Answer": "Mit Go können leistungsstarke Webanwendungen erstellt werden. Das eingebaute `net/http`-Paket macht das Erstellen von Webservern einfach.",
+            "Type": "MatchPartial"
+          },
+          {
+            "Keyword": "Microservices",
+            "Answer": "Go eignet sich hervorragend für die Entwicklung von Microservices, da es leichtgewichtig ist und schnell startet. Viele Unternehmen nutzen es für ihre Backend-Systeme.",
+            "Type": "MatchPartial"
+          }
+        ]
+      },
+      {
+        "Keyword": "Rust",
+        "Answer": "Rust ist bekannt für seine Speichersicherheit und wird oft in Systemprogrammierung verwendet.",
+        "Type": "MatchPartial",
+        "Children": [
+          {
+            "Keyword": "WebAssembly",
+            "Answer": "Rust kann zusammen mit WebAssembly verwendet werden, um High-Performance-Webanwendungen zu erstellen. Eine spannende Kombination für die moderne Webentwicklung!",
+            "Type": "MatchPartial"
+          },
+          {
+            "Keyword": "Systemprogrammierung",
+            "Answer": "Mit Rust können Sie sichere und schnelle Systemsoftware schreiben, ohne sich um Speicherzugriffsfehler sorgen zu müssen.",
+            "Type": "MatchPartial"
+          }
+        ]
+      },
+      {
+        "Keyword": "Swift",
+        "Answer": "Swift ist die von Apple entwickelte Sprache, hauptsächlich für iOS und macOS.",
+        "Type": "MatchPartial",
+        "Children": [
+          {
+            "Keyword": "iOS",
+            "Answer": "Swift hat Objective-C als die Hauptentwicklungssprache für iOS-Apps abgelöst und ermöglicht die Erstellung von reaktiven und benutzerfreundlichen mobilen Anwendungen.",
+            "Type": "MatchPartial"
+          },
+          {
+            "Keyword": "Server Side Swift",
+            "Answer": "Mit Frameworks wie Vapor können Sie serverseitige Anwendungen in Swift entwickeln. Dies bietet eine einheitliche Sprachumgebung für beide Enden.",
+            "Type": "MatchPartial"
+          }
+        ]
+      },
+      {
+        "Keyword": "Kotlin",
+        "Answer": "Kotlin wird oft als moderner Ersatz für Java in der Android-Entwicklung verwendet.",
+        "Type": "MatchPartial",
+        "Children": [
+          {
+            "Keyword": "Android",
+            "Answer": "Kotlin bietet viele moderne Funktionen, die die Android-App-Entwicklung effizienter und angenehmer machen.",
+            "Type": "MatchPartial"
+          },
+          {
+            "Keyword": "Kotlin/Native",
+            "Answer": "Mit Kotlin/Native können Sie plattformübergreifende Anwendungen mit einer einzigen Codebasis erstellen, was die Entwicklung erheblich beschleunigt.",
+            "Type": "MatchPartial"
+          }
+        ]
+      },
+      {
+        "Keyword": "PHP",
+        "Answer": "PHP ist eine weit verbreitete serverseitige Skriptsprache, besonders bekannt für Webentwicklung.",
+        "Type": "MatchPartial",
+        "Children": [
+          {
+            "Keyword": "Laravel",
+            "Answer": "Laravel ist ein modernes PHP-Webanwendungs-Framework mit elegantem Syntax. Es hat viele integrierte Funktionen, die die Webentwicklung beschleunigen.",
+            "Type": "MatchPartial"
+          },
+          {
+            "Keyword": "WordPress",
+            "Answer": "WordPress ist ein Content-Management-System (CMS) auf Basis von PHP. Es ermöglicht Benutzern, Websites ohne tiefe Programmierkenntnisse zu erstellen.",
+            "Type": "MatchPartial"
+          }
+        ]
+      },
+      {
+        "Keyword": "Ruby",
+        "Answer": "Ruby ist bekannt für seine elegante Syntax und wird oft in Webentwicklung verwendet.",
+        "Type": "MatchPartial",
+        "Children": [
+          {
+            "Keyword": "Ruby on Rails",
+            "Answer": "Ruby on Rails, oft einfach 'Rails' genannt, ist ein Webentwicklungs-Framework, das auf dem MVC-Paradigma basiert. Es hat die Webentwicklung revolutioniert und ist bekannt für seine 'Convention over Configuration'-Philosophie.",
+            "Type": "MatchPartial"
+          },
+          {
+            "Keyword": "Sinatra",
+            "Answer": "Sinatra ist ein leichtgewichtiges Web-Framework für Ruby. Es eignet sich gut für einfache Webanwendungen oder APIs.",
+            "Type": "MatchPartial"
+          }
+        ]
+      },
+      {
+        "Keyword": "Perl",
+        "Answer": "Perl war einmal als 'die Klebstoff-Sprache des Internets' bekannt und wird oft für Textverarbeitungsaufgaben verwendet.",
+        "Type": "MatchPartial",
+        "Children": [
+          {
+            "Keyword": "CPAN",
+            "Answer": "CPAN, das Comprehensive Perl Archive Network, ist eine Sammlung von Perl-Modulen und -Bibliotheken. Es ist ein mächtiges Werkzeug, um die Funktionalität von Perl zu erweitern.",
+            "Type": "MatchPartial"
+          },
+          {
+            "Keyword": "Mojolicious",
+            "Answer": "Mojolicious ist ein modernes Web-Framework für Perl. Es bietet viele Funktionen, die das Erstellen von Webanwendungen und -diensten erleichtern.",
+            "Type": "MatchPartial"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Keyword": "Hardware",
+    "Answer": "Hardware ist die Grundlage für alle Technologien. Interessieren Sie sich für PCs, Server, Netzwerkhardware oder etwas anderes?",
+    "Type": "MatchPartial",
+    "Children": [
+      {
+        "Keyword": "PCs",
+        "Answer": "PCs gibt es in vielen Formen und Größen.",
+        "Type": "MatchPartial",
+        "Children": [
+          {
+            "Keyword": "Gaming",
+            "Answer": "Gaming-PCs benötigen leistungsstarke GPUs und CPUs. Ich hoffe, Sie haben viele unterhaltsame Stunden mit Ihrem System!",
+            "Type": "MatchPartial"
+          },
+          {
+            "Keyword": "Büroarbeit",
+            "Answer": "Für Büroarbeiten ist eine zuverlässige und schnelle SSD sowie ausreichend RAM wichtig. Ein effizientes Arbeiten sollte damit gewährleistet sein!",
+            "Type": "MatchPartial"
+          }
+        ]
+      },
+      {
+        "Keyword": "Server",
+        "Answer": "Server sind das Rückgrat vieler Unternehmen.",
+        "Type": "MatchPartial",
+        "Children": [
+          {
+            "Keyword": "Datenzentrum",
+            "Answer": "Datenzentren erfordern robuste Hardware und gute Kühlung. Eine ordnungsgemäße Wartung stellt sicher, dass Ihre Dienste reibungslos laufen.",
+            "Type": "MatchPartial"
+          },
+          {
+            "Keyword": "Heimserver",
+            "Answer": "Ein Heimserver kann für Medienspeicherung, Backups oder Heimautomatisierung nützlich sein. Ich hoffe, es läuft alles reibungslos für Sie!",
+            "Type": "MatchPartial"
+          }
+        ]
+      }
+    ]
+  }
+]

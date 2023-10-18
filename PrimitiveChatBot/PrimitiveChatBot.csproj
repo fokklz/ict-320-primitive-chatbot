@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net7.0-windows</TargetFramework>
+		<Nullable>enable</Nullable>
+		<UseWPF>true</UseWPF>
+		<SelfContained>true</SelfContained>
+		<PublishSingleFile>true</PublishSingleFile>
+		<IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<EmbeddedResource Include="VERSION" />
+		<EmbeddedResource Include="messages.json" />
+	</ItemGroup>
+	
+	<ItemGroup>
+	  <ProjectReference Include="..\StorageLib\StorageLib.csproj" />
+	</ItemGroup>
+</Project>

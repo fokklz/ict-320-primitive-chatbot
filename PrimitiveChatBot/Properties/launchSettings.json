@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "PrimitiveChatBot": {
+      "commandName": "Project",
+      "commandLineArgs": "--admin"
+    }
+  }
+}

@@ -1,0 +1,84 @@
+name: Publish Application
+
+on:
+  push:
+    branches:
+      - advanced-conversations
+    paths:
+      - "PrimitiveChatBot/VERSION"
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Setup .NET SDK
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: "7.0.x"
+
+      - name: Restore dependencies
+        run: dotnet restore
+
+      - name: Run tests
+        run: dotnet test --no-restore --verbosity normal
+
+      - name: Publish WPF App x64
+        run: dotnet publish PrimitiveChatBot/PrimitiveChatBot.csproj -r win-x64 -c Release /p:PublishSingleFile=true /p:PublishTrimmed=false --self-contained true
+
+      - name: Publish WPF App x86
+        run: dotnet publish PrimitiveChatBot/PrimitiveChatBot.csproj -r win-x86 -c Release /p:PublishSingleFile=true /p:PublishTrimmed=false --self-contained true
+
+      - name: Publish Storage Library
+        run: dotnet publish StorageLib/StorageLib.csproj -c Release
+
+      - name: Load version from file
+        id: load_version
+        # Should be the newer way, but is not working
+        # run: echo "version=$(cat PrimitiveChatBot/VERSION | tr -d '\n')" >> $GITHUB_OUTPUT
+        run: echo "::set-output name=version::$(cat PrimitiveChatBot/VERSION | tr -d '\n')"
+
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.G_PAT }}
+        with:
+          tag_name: v${{ steps.load_version.outputs.version }}
+          release_name: Release ${{ steps.load_version.outputs.version }}
+          body: ${{ steps.changelog.outputs.changelog }}
+          draft: false
+          prerelease: false
+
+      - name: Upload x64 Executable to Release
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.G_PAT }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./PrimitiveChatBot/bin/Release/net7.0-windows/win-x64/publish/PrimitiveChatBot.exe
+          asset_name: PrimitiveChatBot-x64.exe
+          asset_content_type: application/octet-stream
+
+      - name: Upload x86 Executable to Release
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.G_PAT }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./PrimitiveChatBot/bin/Release/net7.0-windows/win-x86/publish/PrimitiveChatBot.exe
+          asset_name: PrimitiveChatBot-x86.exe
+          asset_content_type: application/octet-stream
+
+      - name: Upload StorageLib DLL to Release
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.G_PAT }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./StorageLib/bin/Release/net7.0/StorageLib.dll
+          asset_name: StorageLib.dll
+          asset_content_type: application/octet-stream

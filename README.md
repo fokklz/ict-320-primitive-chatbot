@@ -1,1 +1,1 @@
-# ict-320-primitive-chatbot
+# PrimitiveChatBot
