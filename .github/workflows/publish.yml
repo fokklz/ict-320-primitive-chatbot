@@ -3,7 +3,7 @@ name: Publish Application
 on:
   push:
     branches:
-      - advanced-conversations
+      - main
     paths:
       - "PrimitiveChatBot/VERSION"
 
